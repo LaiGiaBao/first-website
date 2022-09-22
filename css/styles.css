@@ -180,7 +180,7 @@ a {
   cursor: pointer;
   font-size: 1.8rem;
   font-weight: 600;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   outline: 0;
   text-transform: uppercase;
   white-space: nowrap;
@@ -265,6 +265,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -654,6 +655,9 @@ a {
   }
 }
 /* Domain Block */
+.block-domain .grid {
+  gap: 4rem 3rem;
+}
 .block-domain .input-group {
   box-shadow: 0 0 30px 20px #e6ebee;
   border: 0;
@@ -661,8 +665,9 @@ a {
   max-width: 670px;
 }
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;

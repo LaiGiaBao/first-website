@@ -1,7 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Dangrek&display=swap");
 :root {
-  --color-primary: #2584ff;
-  --color-secondary: #00d9ff;
-  --color-accent: #ff3400;
+  --color-primary: #df2935;
+  --color-secondary: #3772ff;
+  --color-accent: #ff9f1c;
   --color-headings: #1b0760;
   --color-body: #918ca4;
   --color-border: #ccc;
@@ -99,11 +100,11 @@ a {
   white-space: nowrap;
 }
 .badge--primary {
-  background-color: var(--color-primary);
+  background-color: var(--color-accent);
   color: #fff;
 }
 .badge--secondary {
-  background: var(--color-secondary);
+  background: var(--color-primary);
   color: #fff;
 }
 .badge--small {
@@ -159,6 +160,9 @@ a {
 }
 .icon--white {
   fill: #fff;
+}
+.icon--fill-primary {
+  background-color: var(--color-primary);
 }
 .icon-container {
   background: #f3f9fa;
@@ -219,7 +223,7 @@ a {
   color: #fff;
 }
 .btn--accent:hover {
-  background: #ec3000;
+  background: #f79204;
 }
 
 .btn--block {
@@ -228,12 +232,13 @@ a {
 }
 
 .btn--outline {
-  background: #fff;
+  background-color: #fff;
   color: var(--color-headings);
   border: 2px solid var(--color-headings);
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
 }
 .btn--outline:hover {
-  background: var(--color-headings);
+  background-color: var(--color-headings);
   color: #fff;
 }
 
@@ -299,10 +304,10 @@ a {
 }
 
 .card--primary .badge--primary {
-  background: #126de4;
+  background: #dd1320;
 }
 .card--secondary .badge--secondary {
-  background: #02cdf1;
+  background: #1a5cf6;
 }
 /* Plans */
 .plan {
@@ -563,7 +568,7 @@ a {
 }
 .block--skewed-right {
   padding-bottom: calc(var(--padding-vertical)+ 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
 }
 .block--skewed-left {
   padding-bottom: calc(var(--padding-vertical)+ 4rem);
@@ -615,7 +620,11 @@ a {
 }
 
 .nav__brand {
+  font-family: "Dangrek", cursive;
+  font-size: 5rem;
+  color: #fff;
   transform: translateY(5px);
+  padding: 0 2rem;
 }
 @media screen and (min-width: 768px) {
   .nav__toggler {
@@ -749,8 +758,12 @@ a {
 }
 
 .footer__brand {
+  font-family: "Dangrek", cursive;
+  font-size: 3rem;
+  color: #fff;
   margin-top: 5rem;
   text-align: center;
+  align-self: center;
 }
 .footer__copyright {
   font-size: 2.1rem;
